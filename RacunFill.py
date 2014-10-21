@@ -34,19 +34,19 @@ class RacunFill(unittest.TestCase):
 # Opening form and filling with sample data
 
         counter = 0
-        while (counter < 7):
+        while (counter < 6): #if you have errors when running script try to reduce this amount and run script few times, you can also create as more forms as you want
+            time.sleep(1)
             driver.get(self.base_url + "/output_invoices/new")
             driver.find_element_by_id("partner_name").clear()
             text = driver.find_element_by_id("partner_name").send_keys("TopTal")
             driver.find_element_by_xpath("//input[@id='partner_name']").click()
             driver.find_element_by_id("partner_name").send_keys(Keys.DOWN)
-            time.sleep(1)
+            time.sleep(2)
             driver.find_element_by_id("partner_name").send_keys(Keys.DOWN)
-            time.sleep(1)			
+            time.sleep(2)			
             driver.find_element_by_id("partner_name").send_keys(Keys.ENTER)
-            time.sleep(1)
-            driver.find_element_by_id("output_invoice_city").clear()
-            time.sleep(1)
+            time.sleep(2)
+            #driver.find_element_by_id("output_invoice_city").clear()
             driver.find_element_by_id("output_invoice_city").send_keys("San Francisco")
             driver.find_element_by_id("output_invoice_items__description").clear()
             driver.find_element_by_id("output_invoice_items__description").send_keys("PC delivery")
