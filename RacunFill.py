@@ -91,7 +91,7 @@ class RacunFill(unittest.TestCase):
             print ('FAIL(1)')
             #name_of_exception = type(exception).__name__
 
-	#Checking if partner name is correct
+	#Checking if partner name is correct(test should fail)
 	
         try:	
             assert 'Toptal' in driver.find_element_by_partial_link_text('Toptal')
@@ -100,7 +100,7 @@ class RacunFill(unittest.TestCase):
             print ('FAIL(2)')
             #name_of_exception = type(exception).__name__
 			
-	#Checking if amount is correct
+	#Checking if amount is correct(test should fail)
 	
         try:	
             assert "9,99 kn" in driver.find_elements_by_class_name('money_cell')
