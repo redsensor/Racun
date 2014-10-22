@@ -1,7 +1,5 @@
 ==============================
-
 Racun data creation scripts  
-
 ==============================
 
 Hi Karlo, please find instruction about how to install and run my test scripts.
