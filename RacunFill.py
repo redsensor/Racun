@@ -94,7 +94,7 @@ class RacunFill(unittest.TestCase):
 	#Checking if partner name is correct(test should fail)
 	
         try:	
-            assert 'Toptal' in driver.find_element_by_partial_link_text('Toptal')
+            assert 'Apple' in driver.find_element_by_partial_link_text('Toptal')
             print ('PASS(2)')
         except:
             print ('FAIL(2)')
@@ -103,7 +103,7 @@ class RacunFill(unittest.TestCase):
 	#Checking if amount is correct(test should fail)
 	
         try:	
-            assert "9,99 kn" in driver.find_elements_by_class_name('money_cell')
+            assert "11,11 kn" in driver.find_elements_by_class_name('money_cell')
             print ('PASS(3)')
         except:
             print ('FAIL(3)')
